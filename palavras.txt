@@ -1,7 +1,1 @@
-amor
-cadeira
-mesa
-menino
-abacate
-lousa
-professora
+lala

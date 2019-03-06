@@ -2,7 +2,7 @@ class Palavra
 
     def self.get_palavra
         vetor_palavras = []
-        File.open('../palavras.txt', 'r') do |arq|
+        File.open('palavras.txt', 'r') do |arq|
             while line = arq.gets do
                 vetor_palavras.push(line)
             end
@@ -44,32 +44,6 @@ class Palavra
 
 end
 
-arrayLetras = Palavra.cria_array_palavra("omoto");
-arrayPlataforma = Palavra.cria_array_plataforma(arrayLetras);
-
-arrayIndices = Palavra.cria_array_indices(arrayLetras,'o')
-arrayPlataforma = Palavra.preenche_plataforma(arrayLetras, arrayPlataforma, arrayIndices)
-
-
-print arrayLetras
-puts
-print arrayPlataforma
-puts
-print arrayIndices
-puts
-print arrayPlataforma
-
-arrayIndices = Palavra.cria_array_indices(arrayLetras,'m')
-arrayPlataforma = Palavra.preenche_plataforma(arrayLetras, arrayPlataforma, arrayIndices)
-
-puts
-print arrayPlataforma
-
-arrayIndices = Palavra.cria_array_indices(arrayLetras,'t')
-arrayPlataforma = Palavra.preenche_plataforma(arrayLetras, arrayPlataforma, arrayIndices)
-
-puts
-print arrayPlataforma
 
 
 
